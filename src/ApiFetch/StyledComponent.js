@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
-const InputComponent = styled.input``;
+const InputComponent = styled.input`
+  width: auto;
+  height: 30px;
+  font-size: 25px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+`;
 
 const ContainerDiv = styled.div`
   display: flex;
@@ -12,6 +20,7 @@ const ContainerDiv = styled.div`
 const TableStyled = styled.table`
   border: 1px solid black;
   width: 200px;
+  border-collapse: collapse;
 `;
 
 const Td = styled.td`
@@ -22,4 +31,14 @@ const Tr = styled.tr`
   border: 1px solid black;
 `;
 
-export { InputComponent, ContainerDiv, TableStyled, Td, Tr };
+const StyledButton = styled.button`
+  width: auto;
+  padding: 10px;
+  font-size: 15px;
+  background-color: beige;
+  border-radius: 10px;
+  border: 2px solid grey;
+  cursor: pointer;
+`;
+
+export { InputComponent, ContainerDiv, TableStyled, Td, Tr, StyledButton };

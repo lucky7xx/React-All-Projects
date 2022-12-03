@@ -6,6 +6,7 @@ import {
   TableStyled,
   Tr,
   Td,
+  StyledButton,
 } from "./StyledComponent";
 
 function BatchUsage() {
@@ -38,10 +39,14 @@ function BatchUsage() {
           value={input}
           onChange={handleOnChange}
         ></InputComponent>
-        <button onClick={handleOnclick}>Batch USage</button>
+        <StyledButton onClick={handleOnclick}>Batch USage</StyledButton>
       </ContainerDiv>
       {isLoading ? (
         <ContainerDiv>"Loading..."</ContainerDiv>
+      ) : input[1] === undefined && " " ? (
+        <ContainerDiv>
+          "Please enter 2 values separated by , to fetch the data"
+        </ContainerDiv>
       ) : (
         <ContainerDiv>
           <TableStyled>

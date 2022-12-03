@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { InputComponent, ContainerDiv } from "./StyledComponent";
+import { InputComponent, ContainerDiv, StyledButton } from "./StyledComponent";
 
 function App() {
   const [input, setInput] = useState("");
@@ -30,16 +30,16 @@ function App() {
           value={input}
           onChange={handleOnChange}
         ></InputComponent>
-        <button onClick={handleOnclick}>Get Details</button>
+        <StyledButton onClick={handleOnclick}>Get Details</StyledButton>
       </ContainerDiv>
       {isLoading ? (
         <ContainerDiv>"Loading..."</ContainerDiv>
       ) : (
         <ContainerDiv>
           <ul>
-            <li>Count : {apiData.count}</li>
             <li>Name : {apiData.name}</li>
             <li>Average Age :{apiData.age}</li>
+            <li>Count : {apiData.count}</li>
           </ul>
         </ContainerDiv>
       )}
