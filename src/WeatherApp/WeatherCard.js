@@ -30,12 +30,16 @@ function WeatherCard() {
 
       .then((data) => {
         setApiData(data.data.weather);
-        setTemp(Math.round(data.data.main.temp - 273));
-        setMinTemp(Math.round(data.data.main.temp_min - 273));
-        setMaxTemp(Math.round(data.data.main.temp_max - 273));
-        setPressure(data.data.main.pressure);
-        setHumidity(data.data.main.humidity);
-        setWind(data.data.wind.speed);
+        setTemp(`Temperature: ${Math.round(data.data.main.temp - 273)}°C`);
+        setMinTemp(
+          `Minimum Temperature: ${Math.round(data.data.main.temp_min - 273)}°C`
+        );
+        setMaxTemp(
+          `Maximum Temperature: ${Math.round(data.data.main.temp_max - 273)}°C`
+        );
+        setPressure(`Pressure: ${data.data.main.pressure} Pa`);
+        setHumidity(`Humidity: ${data.data.main.humidity}%`);
+        setWind(`Wind Speed: ${data.data.wind.speed} km/h`);
         setError("");
       })
       .catch((e) => {
@@ -47,6 +51,7 @@ function WeatherCard() {
         setPressure("");
         setHumidity("");
         setWind("");
+        SetInput("");
       });
   };
 
@@ -54,7 +59,7 @@ function WeatherCard() {
     <>
       <ContainerDiv>
         <InnerDiv>
-          <label for="city">City: </label>
+          <label>City: </label>
           <StyledInput
             type="text"
             value={input}
@@ -68,17 +73,18 @@ function WeatherCard() {
       </ContainerDiv>
       <ContainerDiv>
         <div>
+          <h2>{input.toLocaleUpperCase(1)}</h2>
+          <h3 style={{ color: "red" }}> {error} </h3>
           {apiData.map((item) => {
             return <p>Weather: {item.description}</p>;
           })}
 
-          <p>Temperature: {temp}°C</p>
-          <p>Minimum Temperature: {minTemp}°C</p>
-          <p>Maximum Temperature: {maxTemp}°C</p>
-          <p>Pressure: {pressure}pa</p>
-          <p>Humidity:{humidity}%</p>
-          <p>Wind Speed: {wind}</p>
-          <p>Error: {error}</p>
+          <p>{temp}</p>
+          <p> {minTemp}</p>
+          <p> {maxTemp}</p>
+          <p>{pressure}</p>
+          <p>{humidity}</p>
+          <p>{wind}</p>
         </div>
       </ContainerDiv>
     </>
