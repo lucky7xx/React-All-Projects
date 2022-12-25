@@ -8,7 +8,8 @@ import { Route, BrowserRouter } from "react-router-dom";
 // import WeatherCard from "./WeatherApp/WeatherCard";
 // import WeatherApp from "./WeatherApp/WeatherApp";
 // import Rating from "./Rating/Rating";
-import App from "./Router/App";
+// import App from "./Router/App";
+import App from "./NestedRouter/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
