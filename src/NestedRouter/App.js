@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Apple from "./Mobiles/Apple";
-import Boat from "./Mobiles/Headphones/Boat";
-import Headphones from "./Mobiles/Headphones/Headphones";
-import Jbl from "./Mobiles/Headphones/Jbl";
+import Boat from "./Headphones/Boat";
+import Headphones from "./Headphones/Headphones";
+import Jbl from "./Headphones/Jbl";
 import Mobiles from "./Mobiles/Mobiles";
 import Samsung from "./Mobiles/Samsung";
 
