@@ -22,6 +22,16 @@ const StyledInput = styled.input`
   border-radius: 10px;
   border: 2px solid grey;
   padding: 5px;
+
+  /* ::placeholder,
+  ::-webkit-input-placeholder {
+    color: black;
+    background-color: red;
+    border-radius: 200px;
+  }
+  /* :-ms-input-placeholder {
+    color: red;
+  } */ */
 `;
 
 const StyledButton = styled.button`
@@ -34,4 +44,14 @@ const StyledButton = styled.button`
   cursor: pointer;
 `;
 
-export { ContainerDiv, InnerDiv, StyledInput, StyledButton };
+const StyledContainer = styled.div`
+  background-color: aquamarine;
+  border-radius: 20px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-left: 400px;
+  margin-right: 400px;
+`;
+
+export { ContainerDiv, InnerDiv, StyledInput, StyledButton, StyledContainer };

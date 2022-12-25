@@ -15,7 +15,7 @@ function BatchUsage() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleOnChange = (event) => {
-    setInput(event.target.value.split(",", 2));
+    setInput(event.target.value.split(","));
     console.log(input);
   };
 
