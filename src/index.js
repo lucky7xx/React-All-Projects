@@ -9,7 +9,8 @@ import { Route, BrowserRouter } from "react-router-dom";
 // import WeatherApp from "./WeatherApp/WeatherApp";
 // import Rating from "./Rating/Rating";
 // import App from "./Router/App";
-import App from "./NestedRouter/App";
+// import App from "./NestedRouter/App";
+import App from "./Route Hooks/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
