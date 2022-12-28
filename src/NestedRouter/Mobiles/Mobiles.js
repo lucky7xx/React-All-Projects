@@ -1,7 +1,5 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import Apple from "./Apple";
-import Samsung from "./Samsung";
+import { Link, Outlet } from "react-router-dom";
 
 const Mobiles = () => {
   return (
@@ -10,10 +8,11 @@ const Mobiles = () => {
       <Link to={"/mobiles/apple"}>Apple Phones</Link>
       <br />
       <Link to={"/mobiles/samsung"}>Samsung Phones</Link>
-      <Routes>
+      <Outlet />
+      {/* <Routes>
         <Route path="/apple" element={<Apple />} />
         <Route path="/samsung" element={<Samsung />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

@@ -1,7 +1,5 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import Boat from "./Boat";
-import Jbl from "./Jbl";
+import { Link, Outlet } from "react-router-dom";
 
 const Headphones = () => {
   return (
@@ -10,10 +8,11 @@ const Headphones = () => {
       <Link to={"/headphones/boat"}>Boat Headphones</Link>
       <br />
       <Link to={"/headphones/jbl"}>JBL Headphones</Link>
-      <Routes>
+      <Outlet />
+      {/* <Routes>
         <Route path="/boat" element={<Boat />} />
         <Route path="/jbl" element={<Jbl />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

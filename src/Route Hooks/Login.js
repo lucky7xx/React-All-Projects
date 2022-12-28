@@ -14,7 +14,7 @@ const Login = () => {
     }
 
     setTimeout(() => {
-      if (userName == "lucky" && password == "123") {
+      if (userName === "lucky" && password === "123") {
         console.log("You're Admin man!");
         navigate("/admin");
       } else {
