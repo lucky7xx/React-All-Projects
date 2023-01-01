@@ -5,8 +5,8 @@ import "./index.css";
 // import MyComponent from "./Rating/Rating";
 // import App from "./ApiFetch/App";
 // import BatchUsage from "./ApiFetch/BatchUsage";
-// import WeatherCard from "./WeatherApp/WeatherCard";
-import WeatherApp from "./WeatherApp/WeatherApp";
+import WeatherCard from "./WeatherApp/WeatherCard";
+// import WeatherApp from "./WeatherApp/WeatherApp";
 // import Rating from "./Rating/Rating";
 // import App from "./Router/App";
 // import App from "./NestedRouter/App";
@@ -15,6 +15,6 @@ import WeatherApp from "./WeatherApp/WeatherApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <WeatherApp />
+    <WeatherCard />
   </BrowserRouter>
 );

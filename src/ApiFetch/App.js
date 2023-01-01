@@ -29,6 +29,7 @@ function App() {
           type="text"
           value={input}
           onChange={handleOnChange}
+          placeholder="Enter Your Name Here"
         ></InputComponent>
         <StyledButton onClick={handleOnclick}>Get Details</StyledButton>
       </ContainerDiv>

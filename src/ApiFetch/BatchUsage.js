@@ -55,7 +55,9 @@ function BatchUsage() {
                 <>
                   <Tr>
                     <Td>Name</Td>
-                    <Td>{item.name}</Td>
+                    <Td>
+                      {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+                    </Td>
                   </Tr>
 
                   <Tr>

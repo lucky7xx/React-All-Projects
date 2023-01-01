@@ -5,8 +5,8 @@ const InputComponent = styled.input`
   height: 30px;
   font-size: 25px;
   margin-right: 20px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 20px;
+
   border: 1px solid black;
 `;
 
@@ -18,13 +18,16 @@ const ContainerDiv = styled.div`
 `;
 
 const TableStyled = styled.table`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 200px;
+
   border-collapse: collapse;
 `;
 
 const Td = styled.td`
-  border: 1px solid black;
+  border: 5px solid black;
+
+  padding: 10px;
 `;
 
 const Tr = styled.tr`
